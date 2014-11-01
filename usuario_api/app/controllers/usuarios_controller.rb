@@ -15,6 +15,12 @@ class UsuariosController < ApplicationController
     render json: @usuario
   end
 
+  def new
+    @usuario = Usuario.new
+
+    render json: @usuario
+  end
+
   # POST /usuarios
   # POST /usuarios.json
   def create
@@ -49,8 +55,8 @@ class UsuariosController < ApplicationController
   end
 
   private
-    
+
     def usuario_params
-      params.require(:usuario).permit(:nombre, :apellido, :identificacion, :tipo_identificacion, :telefono)
+      params.permit(:nombre, :apellido, :identificacion, :tipo_identificacion, :telefono)
     end
 end
