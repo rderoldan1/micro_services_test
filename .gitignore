@@ -8,6 +8,8 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+sesiones/node_modules/*
+.idea/*
 
 ## Specific to RubyMotion:
 .dat*

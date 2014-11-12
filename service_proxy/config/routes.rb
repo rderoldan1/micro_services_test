@@ -1,4 +1,6 @@
 ServiceProxy::Application.routes.draw do
+  resources :sesiones
+
   resources :empresas
 
   resources :usuarios
